@@ -977,7 +977,8 @@ class NGG_Smart_Image_Search_Public {
 		      $hr_SIS_output .= '<span style="float:left;width:'. $hr_SIS_spacing . ';">' . __("image title", "ngg-smart-image-search") . ':</span>' . $hr_SIS_picture->alttext . '<br/>' ;
 		  }
 		  if ( $hr_SIS_array['list_descr'] ) {       // if requested, list  image description
-		      $hr_SIS_output .= '<span style="float:left;width:'. $hr_SIS_spacing . ';">' . __("description", "ngg-smart-image-search") . ':</span>' . $hr_SIS_picture->description . '<br/>';
+        // jbshin 6-20-2017: modified layout of description section of image search results
+          $hr_SIS_output .= '<span style="float:left;width:'. $hr_SIS_spacing . ';">' . __("description", "ngg-smart-image-search") . ':</span><span style="display:table-cell">' . $hr_SIS_picture->description . '</span>';
 		  }
 		  if ( $hr_SIS_array['list_date'] ) {        // if requested, list  image date
 		      $hr_SIS_output .= '<span style="float:left;width:'. $hr_SIS_spacing . ';">' . __("image date", "ngg-smart-image-search") . ':</span>' . $hr_SIS_picture->imagedate . '<br/>' ;
@@ -1190,7 +1191,7 @@ class NGG_Smart_Image_Search_Public {
     }
 */
     }  // end output if not gallery
-    
+
     return $hr_SIS_output;
 
   }   // end of function   hr_SIS_search_nextgen_images_handler
