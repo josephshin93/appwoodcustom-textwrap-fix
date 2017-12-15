@@ -1,0 +1,50 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ 
+.hr-searchform-widget, .hr-searchform-box {
+	 position: relative !important;
+	 display: block     !important;
+	 overflow: hidden;	
+	 margin: 0;
+}
+
+.hr_searchfield {
+	 display: inline-block !important;
+	 box-sizing: border-box !important;
+	 margin: 0  !important;
+	 width: 100%  !important;
+	 padding: 0.3em 3em 0.3em 0.7em !important;
+	 font-size: 14px !important;
+}
+
+.hr_searchsubmit {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 border: none;
+	 cursor: pointer;
+	 padding: 0.3em 0 ;
+}
+#hr_SIS_w001 .hr_searchsubmit {
+	 padding: 0 ;
+}
+.hr-searchicon {
+	 display: inline-block;
+	 padding: 0 0.3em  ;
+/*	 padding: 0.25em 0.3em 0.55em 0.30em; */
+	 margin:0;
+	 vertical-align: middle;
+/*	 line-height: 1;*/
+}
+
+.hr-searchicon:before {
+	content: '\f400';
+	font-family: 'Genericons';
+  font-size: 24px;
+}
+
+#hr_SIS_w001 .hr-searchicon:before {
+  font-size: 20px;
+}
